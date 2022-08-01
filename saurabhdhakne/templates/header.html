@@ -1,0 +1,104 @@
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Saurabh Dhakne</title>
+
+<!-- Bootstrap CSS -->
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+  crossorigin="anonymous"
+/>
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Play&display=swap");
+  body{
+    font-family: "Play", sans-serif;
+    background: #222a35;
+  }
+
+  .navbar{
+    background:#222a35;
+  }
+  .main {
+    min-height: 100vh;
+    background: #222a35;
+  }
+
+  .main-img {
+    z-index: 0;
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    transform: translate(-40%);
+    width: 40%;
+    opacity: 0.8;
+  }
+
+  .main .display-1 {
+    z-index: 2;
+    font-size: 9vw;
+  }
+
+  .main .main-intro p {
+    font-size: 0.8em;
+  }
+
+  {% comment %} Skills {% endcomment %}
+
+  .skills{
+    background: #1b232e;
+  }
+
+  .skills img{
+    width:90%
+  }
+
+  {% comment %} Blogs {% endcomment %}
+  .blogs .blog img{
+    width:100%;
+  }
+
+  .blogs-head{
+    height:60vh;
+    background:#1b232e;
+  }
+
+  .blogs{
+    margin-top:-20vh
+  }
+
+  .blogs .blog p{
+    font-size:.8em;
+  }
+
+  .single-blog{
+    margin-top:15vh;
+    margin-top:15vh;
+  }
+
+  .other-blog{
+    margin-top:15vh;
+    margin-bottom:15vh;
+  }
+  .other-blog span{
+    font-size:.8em;
+  }
+
+  @media only screen and (max-width: 900px) {
+    .main {
+    }
+    .main .display-1 {
+      z-index: 2;
+      font-size: 20vw;
+      margin-top: 10vh;
+    }
+    .main-img {
+      left: 100%;
+      top: 10vh;
+      right: 0;
+      transform: translate(-80%);
+      width: 80%;
+      opacity: 0.8;
+    }
+  }
+</style>

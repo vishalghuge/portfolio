@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include 'header.html' %}
+  </head>
+  <body>
+    {% include 'navbar.html' %}
+    <div class="container-fluid">
+      <div class="row blogs-head d-flex align-items-center text-center">
+        <h1 class="display-1 text-light">Blogs</h1>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row blogs pt-5">
+          {% for items in allBlogs %}
+          <div class="col-lg-4 d-flex align-items-stretch mb-4">
+            <div class="col-12 bg-dark text-light blog rounded shadow-sm">
+              <img
+                src="https://res.cloudinary.com/defjgjtkn/image/upload/v1659098249/{{items.thumbnail}}.png"
+                alt=""
+                class="blog-img rounded"
+              />
+              <div class="d-flex flex-column p-3">
+                <h4>{{ items.title }}</h4>
+                <p class="text-secondary">{{items.desc}}</p>
+                <div class="d-flex align-items-center justify-content-between">
+                  <span>
+                    <a
+                      href="{% url 'post' items.slug %}"
+                      class="text-decoration-none text-white"
+                    >
+                      Read More
+                    </a>
+                  </span>
+                  <span class="text-white"> {{ items.created_at }} </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+    {% comment %} {% if surname %}
+    <h1>{{ surname }}</h1>
+    {% else %}
+    <h1>surname not available</h1>
+    {% endif %} {% endcomment %} {% include 'footer.html' %}
+  </body>
+</html>

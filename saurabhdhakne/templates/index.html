@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include 'header.html' %}
+  </head>
+  <body>
+    {% include 'navbar.html' %}
+
+    <div class="container-fluid">
+      <div class="row main pt-5 align-items-stretch">
+        <div class="col-md-5 d-flex main-name offset-md-1">
+          <h1
+            class="display-1 text-light d-flex align-items-md-end align-items-md-end"
+          >
+            I'm <br />
+            Saurabh <br />
+            Dhakne
+          </h1>
+        </div>
+
+        <div
+          class="col-md-4 offset-md-1 main-intro d-flex align-items-md-center"
+        >
+          <div class="d-flex flex-column">
+            <h5 class="text-secondary">Developer</h5>
+            <h1 class="text-light h2">
+              I'm Just a Guy Who is Developer for Fun.
+            </h1>
+            <p class="text-justify text-secondary">
+              My passion for learning new technologies drives me To embrace them
+              to create something new. Having desire to learn things is an
+              integral part of my life. <br />
+              Although there's still a long way to go for me, I never miss an
+              opportunity to learn and grow.
+            </p>
+            <button
+              class="btn btn-outline-light col-lg-5 col-6"
+              onclick="window.location='blogs'"
+            >
+              Read Blogs
+            </button>
+          </div>
+        </div>
+
+        <img
+          class="main-img"
+          src="https://res.cloudinary.com/defjgjtkn/image/upload/v1659098249/saurabh_nhb6vw.png"
+          alt="saurabh image"
+        />
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row skills pt-5 pb-5">
+        <div class="h5 text-center col-12 mb-5">
+          <h1 class="text-light">Here are Some of My Skills</h1>
+        </div>
+
+        <div class="col-md-10 offset-md-1">
+          <div class="row">
+            <div
+              class="col-md-3 col-4 d-flex align-items-center justify-content-center p-3"
+            >
+              <img
+                src="https://res.cloudinary.com/defjgjtkn/image/upload/v1659106722/skills/nestjs_tnc3mz.webp"
+                alt=""
+              />
+            </div>
+            <div
+              class="col-md-3 col-4 d-flex align-items-center justify-content-center p-3"
+            >
+              <img
+                src="https://res.cloudinary.com/defjgjtkn/image/upload/v1659106719/skills/nodejs_zi1dvj.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="col-md-3 col-4 d-flex align-items-centert justify-content-center p-3"
+            >
+              <img
+                src="https://res.cloudinary.com/defjgjtkn/image/upload/v1659106726/skills/django-logo-negative_k0mhvz.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="col-md-3 col-4 d-flex align-items-center justify-content-center p-3"
+            >
+              <img
+                src="https://res.cloudinary.com/defjgjtkn/image/upload/v1659106719/skills/PHP-logo.svg_hixal7.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="col-md-3 col-4 d-flex align-items-centert justify-content-center p-3"
+            >
+              <img
+                src="https://res.cloudinary.com/defjgjtkn/image/upload/v1659106721/skills/rest_afoyza.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="col-md-3 col-4 d-flex align-items-center justify-content-center p-3"
+            >
+              <img
+                src="https://res.cloudinary.com/defjgjtkn/image/upload/v1659106725/skills/graphql_wgzppc.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="col-md-3 col-4 d-flex align-items-center justify-content-center p-3"
+            >
+              <img
+                src="https://res.cloudinary.com/defjgjtkn/image/upload/v1659106723/skills/postgres_i5mya7.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="col-md-3 col-4 d-flex align-items-center justify-content-center p-3"
+            >
+              <img
+                src="https://res.cloudinary.com/defjgjtkn/image/upload/v1659106727/skills/mongodb_b8p2om.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="col-md-3 col-4 d-flex align-items-center justify-content-center p-3"
+            >
+              <img
+                src="https://res.cloudinary.com/defjgjtkn/image/upload/v1659106719/skills/MySQL-Logo.wine_eax82y.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="col-md-3 col-4 d-flex align-items-center justify-content-center p-3"
+            >
+              <img
+                src="https://res.cloudinary.com/defjgjtkn/image/upload/v1659106728/skills/React_logo_wordmark_tzsb7z.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="col-md-3 col-4 d-flex align-items-center justify-content-center p-3"
+            >
+              <img
+                src="https://res.cloudinary.com/defjgjtkn/image/upload/v1659106724/skills/html_tiyppn.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="col-md-3 col-4 d-flex align-items-center justify-content-center p-3"
+            >
+              <img
+                src="https://res.cloudinary.com/defjgjtkn/image/upload/v1659106720/skills/figma_venqdy.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% comment %} {% if surname %}
+    <h1>{{ surname }}</h1>
+    {% else %}
+    <h1>surname not available</h1>
+    {% endif %} {% endcomment %} {% include 'footer.html' %}
+  </body>
+</html>

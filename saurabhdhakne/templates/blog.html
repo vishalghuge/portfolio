@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include 'header.html' %}
+  </head>
+  <body>
+    {% include 'navbar.html' %}
+    <div class="container-fluid">
+      <div class="col-md-10 offset-md-1">
+        <div class="row">
+          <div class="col-md-9 single-blog rounded shadow-sm bg-light">
+            {% autoescape off %} {{ blogs }} {% endautoescape %}
+          </div>
+          <div class="col-md-3 pl-2 pr-2 other-blog">
+            {% for item in allBlogs %}
+            <a
+              href="{% url 'post' item.slug %}"
+              class="text-decoration-none text-dark"
+            >
+              <div class="col-12 bg-light p-2 rounded shadow-sm mb-4">
+                <span class="other-blogs-title"> {{ item.title }} </span>
+              </div>
+            </a>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+    {% comment %} {% if surname %}
+    <h1>{{ surname }}</h1>
+    {% else %}
+    <h1>surname not available</h1>
+    {% endif %} {% endcomment %} {% include 'footer.html' %}
+  </body>
+</html>
