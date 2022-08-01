@@ -94,7 +94,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'saurabhdhaknedb', 
         'USER': 'postgres', 
-        'PASSWORD': 'toor',
+        'PASSWORD': '#404@PgPass',
         'HOST': '127.0.0.1', 
         'PORT': '5432', 
     }
