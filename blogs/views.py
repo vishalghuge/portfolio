@@ -1,13 +1,9 @@
-from multiprocessing import context
-from turtle import title
 from django.shortcuts import render
 from .models import Posts
-from django.db.models import Q
 
 # Create your views here.
 def getBlogs(request):
     try:
-        # context = {}
         allBlogs = []
         blogs = Posts.objects.all().values()
         for blog in blogs:
